@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	</head>
 	<style>
 .mod{
@@ -14,9 +15,140 @@ font-size: 3.25em;
     letter-spacing: -0.025em;
     font-weight: 600;
 }
+.mod1{
+
+font-size: 2em;
+    letter-spacing: -0.015em;
+color:#69BE28;
+}
+.mod2{
+    font-size: 1.25em;
+    margin-bottom: 2em;
+	color:black;
+
+}
+.mod3{
+margin-top:-30px;
+
+}
+#zx{
+visibility: hidden;
+
+}
+#zx1{
+visibility: hidden;
+
+}
+#zx2{
+visibility: hidden;
+
+}
+#zx3{
+visibility: hidden;
+
+}
+#zx4{
+visibility: hidden;
+
+}
+#zx5{
+visibility: hidden;
+
+}
+#zx6{
+visibility: hidden;
+
+}
 	
 	
 	</style>
+	
+<script>
+	$(window).scroll(function() {
+		$('#zx').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#zx1').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#zx2').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("fadeIn");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#zx4').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideRight");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#zx5').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideDown");
+			}
+		});
+	});
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#zx6').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+</script>
+
+
+	
+	
+	
+	
+	
+	
+	
 	<body class="is-preload">
 
 		<!-- Nav -->
@@ -60,8 +192,8 @@ font-size: 3.25em;
 			<article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+						<div id="zx3" class=" fadeIn col-4 col-5-large col-12-medium">
+							<span class="image fit "><img src="images/pic00.jpg" alt="" /></span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							
@@ -76,30 +208,37 @@ font-size: 3.25em;
 			<article id="portfolio" class="wrapper style3">
 				<div class="container">
 					<header>
-						<h2>Fitness classes</h2>
-						<p>Choose a plan below that works best for you.</p>
+						<h2 class="mod1">Fitness classes</h2>
+						<p class="mod2">Choose a plan below that works best for you.</p>
 					</header>
 					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
+						<div  id="zx" class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image1 featured"><img src="images/pic04.jpg" alt="" /></a>
+								<p>Get access to personal training</p>
+								<a href="buynow.html" class="button large scrolly">Access now</a>
+							</article>
 							
+
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div id="zx1" class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image1 featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="#">Veroeros primis</a></h3>
-								<p>Get access to this class.</p>
+								<p>Get access to this FitCamp</p>
+								<a href="buynow.html" class="button large scrolly">Access now</a>
 							</article>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							
+						<div id="zx2" class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="#" class="image1 featured"><img src="images/pic03.jpg" alt="" /></a>
+								<p>Get access to family training</p>
+								<a href="buynow.html" class="button large scrolly">Access now</a>
+							</article>
 						</div>
 						
 						
 					</div>
-					<footer>
-						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
+					
 				</div>
 			</article>
 
@@ -113,25 +252,25 @@ font-size: 3.25em;
 						<p>and awareness to keeping a healthy mind and body.</p>
 					</header>
 					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
+						<div id="zx4" class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-heartbeat"></span>
 								<h3>Increase</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+								<p>We train hard here at BBG&trade increased heart rate with premium workouts will help you reach your personal goal..</p>
 							</section>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div id="zx5" class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-trophy"></span>
 								<h3>Achieve</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+								<p>Improve your body, health and mindset with our customized workout programs that will guide and encourage you every step of the way. Our workouts provide detailed, day-by-day instruction, creating incredible, sustainable results.</p>
 							</section>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div id="zx6" class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
 								<span class="icon featured fa-thumbs-o-up"></span>
 								<h3>Positivity</h3>
-								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+								<p>We are nurturers: we seek only to encourage, entertain, and empower.</p>
 							</section>
 						</div>
 					</div>
